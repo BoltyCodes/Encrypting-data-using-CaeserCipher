@@ -28,14 +28,11 @@ def CaeserCipher(string, k):
     return newCipher
 
 
-encrypt_file = open('./Encryption/encrypt.txt', 'r+')
+
 
 true = True
 message = input("Enter the message you want to encrypt: ") 
-for i in encrypt_file:
-
-    encrypted_message = CaeserCipher(message, 4)
-    encrypt_file.write(encrypted_message)
+print(CaeserCipher(message, 3))
     
 
 
